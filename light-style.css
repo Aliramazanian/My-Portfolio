@@ -124,8 +124,8 @@ body {
 }
 p {
   position: absolute;
-left: 22%;
-font-size: 1.5rem;
+  left: 22%;
+  font-size: 1.5rem;
 }
 
 @keyframes shadow-swing {
@@ -138,4 +138,15 @@ font-size: 1.5rem;
   100% {
     transform: translateX(100px);
   }
+}
+
+.backtomain {
+  position: relative;
+  top: 270px;
+  left: 100px;
+}
+.backtomain a {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid black;
 }

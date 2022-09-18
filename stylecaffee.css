@@ -139,6 +139,7 @@ body {
 .aboutme {
   position: absolute;
   top: 80%;
+  left: 500px;
 }
 .aboutme h1 {
   position: absolute;
@@ -149,4 +150,25 @@ body {
 }
 form, input {
   text-align: center;
+}
+footer {
+  position: relative;
+  top: 750px;
+  left: -290px;
+  padding-top: 50px;
+  
+
+  
+}
+footer button {
+  background-color: #ae3580;
+  color: #dcdcdc;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  
+width: 12vw;
+
+}
+footer a {
+  text-decoration: none;
 }
