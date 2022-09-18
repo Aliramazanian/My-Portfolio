@@ -17,6 +17,7 @@ div {
 }
 div:nth-child(1) {
   background: #00485f;
+  
   left: 0;
   top: -400px;
   transition-duration: 4s;
@@ -73,4 +74,42 @@ footer a {
   text-decoration: none;
   color: black;
 
+}
+div:nth-child(1):hover{
+  animation-play-state: paused;
+  }
+  
+
+div:nth-child(2):hover{
+  animation-play-state: paused;
+  }
+  
+div:nth-child(3):hover{
+  animation-play-state: paused;
+  }
+  
+div:nth-child(4):hover {
+animation-play-state: paused;
+}
+.items3 h1 {
+  font-size: 3rem;
+  color: #755990;
+  position: relative;
+  left: 25px;
+}
+
+.items3 span {
+  font-size: 1.5rem;
+  color: #755990;
+  position: relative;
+  left: 25px;
+}
+.items1 img {
+position: absolute;
+left: 15px;
+}
+
+.fa-brands {
+  position: relative;
+  left: 25px;
 }
