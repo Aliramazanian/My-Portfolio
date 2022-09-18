@@ -215,33 +215,49 @@ h2 {
   background-color: rgb(225, 98, 98);
   text-align: center;
   width: 100%;
-  height: 83.5vh;
+  height: 55vh;
   display: grid;
-  grid-template-columns: repeat(3, 1.5fr);
-  /* grid-template-rows: repeat(2, 400px); */
-  /* grid-template-areas: "header header header", "middle middle middle",
-    "bottom bottom bottom"; */
+  grid-template-columns: 635px 635px 635px ;
+  grid-template-rows: 100px 500px;
+  grid-template-areas:
+    "header header header"
+    "right middle left";
 }
 .items1 {
+  grid-area: header;
   background-color: #755990;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.items1 a {
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+
 }
 .items2 {
+  grid-area: right;
+  grid-area: right;
   background-color: #43547a;
   border: 2px solid black;
 }
 .items3 {
+  grid-area: middle;
   border: 2px solid black;
 }
 .items4 {
+  grid-area: left;
   border: 2px solid black;
 }
-.items5 {
+/* .items5 {
   border: 2px solid black;
 }
 .items6 {
   border: 2px solid black;
-}
+} */
 .download {
   display: flex;
   justify-content: center;
