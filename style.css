@@ -142,7 +142,7 @@ h2 {
 
 .header-pic {
   height: 100vh;
-  background: url(header-pic2.webp);
+  background: url(./asset/header-pic2.webp);
   background-size: cover;
   background-size: cover;
   position: center;
@@ -570,4 +570,20 @@ textarea {
   font-size: 3rem;
   top: 200px;
   z-index: 1;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+ 
+  cursor: pointer;
+}
+.socicon {
+  border-radius: 50%;
+  background-color: #93ff2d;
+}
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
 }
