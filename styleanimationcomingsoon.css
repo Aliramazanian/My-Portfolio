@@ -16,6 +16,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  top: -250px;
+  
 }
 .container .ring {
   position: relative;
