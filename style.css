@@ -335,7 +335,7 @@ li a {
   .Curriculum-vitae {
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 150vh;
   }
   .text-header {
     font-size: 2.5rem;
