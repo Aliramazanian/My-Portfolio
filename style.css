@@ -21,7 +21,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #00baf0;
   background: linear-gradient(to left, #f46b45, #eea849);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -229,7 +229,6 @@ li a {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 15px;
-  
 }
 .button-middle-page a {
   text-decoration: none;
@@ -265,7 +264,7 @@ li a {
   display: grid;
   gap: 5px;
   margin: 10px 35px 20px 35px;
-  
+
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 20% 80%;
   grid-template-areas:
@@ -274,7 +273,7 @@ li a {
 }
 .items1 {
   grid-area: header;
-  
+
   background-color: #755990;
   border: 2px solid black;
   display: flex;
@@ -362,41 +361,57 @@ li a {
   footer {
     top: 100px;
   }
-  .container2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    z-index: 2;
-  }
-  .container2 h1 {
-    margin-top: -160px;
-  }
-  .container2 div {
-    margin-left: -100px;
-  }
-}
 
+.main-container {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+
+}
+.container2 h1 {
+  font-size: 1rem;
+}
+.text {
+  width: 100%;
+  display: block;
+}
+.iframebox1,
+.iframebox2,
+.iframebox3,
+.iframebox4,
+.iframebox5,
+.iframebox6 {
+  width: 49%;
+  height: 70%;
+}
+}
 /* media query section ended*/
 
 /* portfolio, iframe section and class container2 started */
 .container2 {
-  background-color: #A057B4;
+  background-color: #a057b4;
   width: 100%;
   height: 25vh;
+}
+.container2 h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.main-container {
   display: flex;
+  border-color: #a057b4;
+  height: 50%;
+  justify-content: space-between;
+  position: relative;
 }
 
 .iframe-preview {
   transition: 0.2s ease-in-out opacity, 0.2s ease-in-out transform;
   opacity: 0;
   position: absolute;
-  bottom: 110%;
-  left: 50%;
+  bottom: 25px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   width: 230px;
-  padding-right: 30px;
   height: 160px;
   border: 4px solid #fff;
   overflow-x: hidden;
@@ -407,19 +422,17 @@ li a {
 iframe {
   transform: scale(0.2);
   transform-origin: 0 0;
-  
 }
 
 .text {
   cursor: default;
   display: inline-block;
-  position: relative;
-  border: 2px solid #ddd;
+   border: 2px solid #ddd;
   padding: 5px;
   border-radius: 3px;
   font-size: 12px;
-  width: 100px;
-  background-color:#755990;
+  width: calc(100% / 3);
+  background-color: #755990;
 }
 .text:hover .iframe-preview {
   opacity: 1;
@@ -436,19 +449,16 @@ iframe {
 .iframebox4,
 .iframebox5,
 .iframebox6 {
-  margin-top: 25px;
-    width: 500px;
-  height: 300px;
+  margin-top: 5%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 50%;
+  width: 25%;
+
 }
 .container2 span a {
   text-decoration: none;
   color: #fff;
 }
-
 
 /* portfolio, iframe section and class container2 ended */
 

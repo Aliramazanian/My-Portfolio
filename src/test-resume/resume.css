@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-page {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.aside-nav {
+  background-color: rgb(189, 93, 56);
+  width: 20vw;
+  height: 585vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-page {
+  width: 70%;
+  height: 300vw;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 300px;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav-text ul li {
+  list-style-type: none;
+}
+
+img {
+  width: 120px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 350px;
+  margin-left: 60px;
+}
+
+.main-tittle {
+  font-size: 5rem;
+}
+
+.lastname {
+  color: rgb(189, 93, 56);
+}
+
+.subheading {
+  font-style: oblique;
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+.subheading a {
+  color: rgb(189, 93, 56);
+}
+
+.resume-section p {
+  font-style: oblique;
+  font-size: 1.5rem;
+}
+
+.lead {
+  margin-top: 50px;
+}
+
+.social-icon {
+  padding: 15px;
+}
+
+i {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.tittle-section {
+  font-size: 5rem;
+  margin-left: 55px;
+  margin-bottom: 50px;
+}
+
+.experiance-1,
+.experiance-2,
+.experiance-3,
+.experiance-4 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.main-text h3 {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+.subheading-experiance span {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+.time-event span {
+  font-size: 1.5rem;
+  color: rgb(189, 93, 56);
+}
+
+.skills {
+  margin-left: 60px;
+}
+
+.skills-logo ul {
+  display: flex;
+  padding: 5px;
+}
+
+.skills-logo ul li {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.awards {
+  margin-left: 55px;
+}/*# sourceMappingURL=resume.css.map */
