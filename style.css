@@ -3,16 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   overflow-x: hidden;
+  
 }
 
 header {
-  position: relative;
+  background: #0c192c;
+  height: 99vh;
 }
-/* navbar mediaquery  statrded*/
-
 h2 {
   vertical-align: center;
   text-align: center;
@@ -21,9 +22,9 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  background-color: #00baf0;
-  background: linear-gradient(to left, #f46b45, #eea849);
+  justify-content: space-around;
+  background-color: #18657c;
+  background: linear-gradient(to left, #20216d, #121c41);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   height: 50px;
@@ -146,31 +147,84 @@ li a {
   }
 }
 
-/* navbar mediaquery ended  */
+/* rain section  */
 
-.g-container {
+.bubble {
   position: relative;
-  margin-left: 20%;
-  margin-top: 50%;
-  font-family: monospace;
-  color: rgb(255, 255, 255);
-  font-size: 4em;
-  filter: contrast(15);
-  z-index: 2;
-  width: 20%;
-  height: 30%;
   display: flex;
-  flex-direction: column;
 }
+
+.bubble span {
+  position: relative;
+  height: 30px;
+  width: 30px;
+ 
+  margin: 0 4px;
+  border-radius: 50%;
+  
+  animation: animate 2s linear infinite;
+  animation-duration: calc(80s / var(--i));
+}
+.bubble span:nth-child(even) {
+  width: 15px;
+  height: 10px;
+  font-size: 2.5rem;
+  color: #26246d;
+  /* background: #71062c; */
+  /* box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #71062c, 0 0 100px #71062c; */
+}
+.bubble span:nth-child(odd) {
+  width: 15px;
+  height: 15px;
+  font-size: 3rem;
+  color: #fff;
+  /* background-color: #fff ; */
+ /* background: #01494a; */
+ /* box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #01494a, 0 0 100px #01494a; */
+  /* box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #71062c, 0 0 100px #71062c; */
+}
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+.container5 {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  width: 100%;
+  margin-top: -80px;
+}
+.pic-main-face {
+  background: url(/asset/laptop-tablet-desktop-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
+  margin-left: 30%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
 
 .item-1,
 .item-2,
 .item-3 {
-  position: absolute;
+  position: relative;
   display: block;
-  top: 5em;
+  top: 2em;
   width: 60%;
-  font-size: 2em;
+  font-size: 4em;
   color: #fff;
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
@@ -241,187 +295,70 @@ li a {
     opacity: 0;
   }
 }
-/* header and header's pic and and header's text started */
 
-.header-pic {
-  height: 100vh;
-  background: url(./asset/header-pic2.webp);
-  background-size: cover;
-  background-size: cover;
-  position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  top: -20px;
-  z-index: -1;
-  opacity: 0.4;
-}
 
-.header-pic::before {
-  content: "";
-  background-color: rgba(65, 70, 75, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.text-header {
-  margin-top: 10%;
-  color: #df5871;
-  font-size: 5rem;
-  position: absolute;
-  top: 17%;
-  text-align: center;
-  left: 23%;
-  transform: translateX(0, -50%);
-}
-.header-text-button {
-  width: 15%;
-  height: 35px;
-  background-color: #f46b45;
-  /* background-color: rgb(15, 47, 87); */
-  border-radius: 10px;
-  color: aliceblue;
-  font-size: 1vw;
-  position: relative;
-  top: 5vw;
-  left: -25%;
-}
-.underline {
-  width: 160px;
-  height: 5px;
-  background-color: rgb(28, 31, 113);
-}
-
-/* header and header's pic and text ended */
-
-/* middle pae  started */
-.middle-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 40vh;
-  text-align: center;
-  background-color: #b0568d;
-}
-.tittle-middle-page {
-  color: #fff;
-  font-size: 2rem;
-}
-.button-middle-page {
-  background-color: #755990;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 15px;
-}
-.button-middle-page a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 .social-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 95px;
-}
-.media-link {
-  bottom: 10px;
-}
-
-.media-link i {
-  padding: 15px;
-  margin-top: 30px !important;
-}
-/* middle page ended */
-
-/* curriculum vitae section */
-
-.Curriculum-vitae {
-  /* background-color: rgb(225, 98, 98); */
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  height: 53vh;
-  display: grid;
-  gap: 5px;
-  margin: 10px 35px 20px 35px;
-
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas:
-    "header header header"
-    "right middle left";
-}
-.items1 {
-  grid-area: header;
-
-  background-color: #755990;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.items1 a {
-  font-size: 3rem;
   color: #fff;
-  text-decoration: none;
-}
-.items2 {
-  overflow: scroll;
-  background-color: #fff;
-  grid-area: right;
-  border: 2px solid black;
-  padding: 20px;
-}
-.items3 {
-  padding: 20px;
-  overflow: scroll;
-  background-color: #fff;
-  grid-area: middle;
-  border: 2px solid black;
-}
-.items4 {
-  padding: 20px;
-  overflow: scroll;
-  background-color: #fff;
-  grid-area: left;
-  border: 2px solid black;
 }
 
-/* download section  */
-.download {
-  position: relative;
+.media-link a {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
-  padding: 50px;
-}
-
-.download a {
-  margin-top: 20px;
+  margin: 25px;
+  padding: 15px;
   text-decoration: none;
 }
-.items7 {
-  text-align: center;
+
+/* wave section */
+
+
+
+/* Here we declare the SVG node that we wish to animate. */
+
+.animated-waves > use {
+  animation: infinite-waves 25s cubic-bezier(0.8, 0.8, 0.6, 0.9) infinite;
+}
+.animated-waves > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.animated-waves > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.animated-waves > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.animated-waves > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes infinite-waves {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .css-waves {
+    height: 15vh;
+    min-height: 40px;
+  }
+
+  /* .pic-main-face {
+    height: 25vh;
+    width: 20vw;
+  } */
+ 
 }
 
-/* download section is ended */
 
-/* media query section */
 
 @media (max-width: 900px) {
   .Curriculum-vitae {
@@ -476,18 +413,27 @@ li a {
     width: 49%;
     height: 70%;
   }
+  .container5 {
+    width: 50%;
+    height: 90vh;
+   
+  }
+  .item-1, .item-2, .item-3 {
+   font-size: 2rem;
+  }
 }
 
 .container5 {
-  /* position: relative; */
+  position: relative;
   display: flex;
-
+  z-index: 2;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 90vh;
   overflow: hidden;
-  width: 100%;
+ 
+  margin-top: -80px;
 }
 .pic-main-face {
   background: url(/asset/laptop-tablet-desktop-mobile.png);
@@ -498,15 +444,123 @@ li a {
   height: 25rem;
   margin-left: 30%;
   opacity: 0.3;
-  /* margin-top: 20%;
-  margin-left: 20%; */
   z-index: -1;
 }
-/* media query section ended*/
+
+
+
+
+
+/* middle pae  started */
+.middle-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  background-color: #0d1f3b;
+}
+.tittle-middle-page {
+  color: #fff;
+  font-size: 2rem;
+}
+.button-middle-page {
+  background-color: #232674;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.button-middle-page a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 95px;
+}
+.media-link {
+  bottom: 10px;
+}
+
+.media-link i {
+  padding: 15px;
+  margin-top: 30px !important;
+}
+/* middle page ended */
+
+
+
+/* curriculum vitae section */
+.Curriculum-vitae {
+  /* background-color: rgb(225, 98, 98); */
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 53vh;
+  display: grid;
+  gap: 5px;
+  margin: 10px 35px 20px 35px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "header header header"
+    "right middle left";
+}
+.items1 {
+  grid-area: header;
+  background-color: #19345d;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items1 a {
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+}
+.items2 {
+  overflow: scroll;
+  background-color: #fff;
+  grid-area: right;
+  border: 2px solid black;
+  padding: 20px;
+}
+.items3 {
+  padding: 20px;
+  overflow: scroll;
+  background-color: #fff;
+  grid-area: middle;
+  border: 2px solid black;
+}
+.items4 {
+  padding: 20px;
+  overflow: scroll;
+  background-color: #fff;
+  grid-area: left;
+  border: 2px solid black;
+}
+
+
+
 
 /* portfolio, iframe section and class container2 started */
 .container2 {
-  background-color: #a057b4;
+  background-color: #375279;
   width: 100%;
   height: 25vh;
 }
@@ -516,7 +570,7 @@ li a {
 }
 .main-container {
   display: flex;
-  border-color: #a057b4;
+  border-color: #2f5a8f;
   height: 50%;
   justify-content: space-between;
   position: relative;
@@ -549,7 +603,7 @@ iframe {
   border-radius: 3px;
   font-size: 12px;
   width: calc(100% / 3);
-  background-color: #755990;
+  background-color: #57619c;
 }
 .text:hover .iframe-preview {
   opacity: 1;
@@ -587,7 +641,7 @@ iframe {
 }
 .socicon {
   border-radius: 50%;
-  background-color: #93ff2d;
+  background-color: #816de5;
 }
 .up-arrow {
   width: 3rem;
@@ -607,3 +661,46 @@ footer {
   margin-top: 30px;
 }
 /* footer section is ended */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
