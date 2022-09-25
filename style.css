@@ -5,9 +5,7 @@
 }
 
 body {
-
   overflow-x: hidden;
-  
 }
 
 header {
@@ -158,10 +156,8 @@ li a {
   position: relative;
   height: 30px;
   width: 30px;
- 
   margin: 0 4px;
   border-radius: 50%;
-  
   animation: animate 2s linear infinite;
   animation-duration: calc(80s / var(--i));
 }
@@ -179,8 +175,8 @@ li a {
   font-size: 3rem;
   color: #fff;
   /* background-color: #fff ; */
- /* background: #01494a; */
- /* box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #01494a, 0 0 100px #01494a; */
+  /* background: #01494a; */
+  /* box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #01494a, 0 0 100px #01494a; */
   /* box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #71062c, 0 0 100px #71062c; */
 }
 @keyframes animate {
@@ -191,31 +187,6 @@ li a {
     transform: translateY(-10vh) scale(1);
   }
 }
-
-.container5 {
-  position: relative;
-  display: flex;
-  z-index: 2;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-  overflow: hidden;
-  width: 100%;
-  margin-top: -80px;
-}
-.pic-main-face {
-  background: url(/asset/laptop-tablet-desktop-mobile.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 25rem;
-  height: 25rem;
-  margin-left: 30%;
-  opacity: 0.3;
-  z-index: -1;
-}
-
 
 .item-1,
 .item-2,
@@ -296,9 +267,9 @@ li a {
   }
 }
 
-
 .social-media {
   color: #fff;
+  margin-right: -20%;
 }
 
 .media-link a {
@@ -306,61 +277,16 @@ li a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 25px;
-  padding: 15px;
+  /* margin: 25px;
+  padding: 15px; */
   text-decoration: none;
 }
 
-/* wave section */
 
-
-
-/* Here we declare the SVG node that we wish to animate. */
-
-.animated-waves > use {
-  animation: infinite-waves 25s cubic-bezier(0.8, 0.8, 0.6, 0.9) infinite;
-}
-.animated-waves > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.animated-waves > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.animated-waves > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.animated-waves > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes infinite-waves {
-  0% {
-    transform: translate3d(-90px, 0, 0);
+@media (max-width: 768px) {
+  .bubble span{
+    width: 2px;
   }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
-/* Mobile Optimization */
-@media (max-width: 600px) {
-  .css-waves {
-    height: 15vh;
-    min-height: 40px;
-  }
-
-  /* .pic-main-face {
-    height: 25vh;
-    width: 20vw;
-  } */
- 
-}
-
-
-
-@media (max-width: 900px) {
   .Curriculum-vitae {
     display: flex;
     flex-direction: column;
@@ -373,24 +299,31 @@ li a {
     left: -30%;
     top: 35px;
   }
-  .items1,
+
   .items2,
   .items3,
-  .items4,
-  .items5,
-  .items6 {
-    height: 100vh;
+  .items4 {
+    height: 40vh;
+    width: 100%;
   }
+  /* .items2,
+  .items3,
+  .items4  img {
+    height: 10vh;
+    width: 100%;
+  } */
   .media-link {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
   .social-tittle {
     text-align: center;
   }
   footer {
     top: 100px;
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .main-container {
@@ -398,28 +331,48 @@ li a {
     flex-wrap: wrap;
   }
   .container2 h1 {
-    font-size: 1rem;
+    font-size: 3rem;
   }
   .text {
+    width: rem;
+  }
+  .text a {
     width: 100%;
     display: block;
+    font-size: 0.9rem;
   }
+
+  .main-container span {
+    width: 5rem;
+  }
+
   .iframebox1,
   .iframebox2,
   .iframebox3,
   .iframebox4,
   .iframebox5,
   .iframebox6 {
-    width: 49%;
+    width: 20rem;
     height: 70%;
   }
   .container5 {
     width: 50%;
     height: 90vh;
-   
   }
-  .item-1, .item-2, .item-3 {
-   font-size: 2rem;
+  .item-1,
+  .item-2,
+  .item-3 {
+    font-size: 2rem;
+  }
+  .pic-main-face {
+    width: 6rem;
+    justify-content: space-between;
+    margin-left: 4%;
+  }
+  .scroll-up {
+    position: fixed;
+    right: 62%;
+    bottom: 20%;
   }
 }
 
@@ -427,12 +380,12 @@ li a {
   position: relative;
   display: flex;
   z-index: 2;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 90vh;
   overflow: hidden;
- 
+
   margin-top: -80px;
 }
 .pic-main-face {
@@ -442,14 +395,10 @@ li a {
   background-size: cover;
   width: 25rem;
   height: 25rem;
-  margin-left: 30%;
+  margin-left: 0%;
   opacity: 0.3;
   z-index: -1;
 }
-
-
-
-
 
 /* middle pae  started */
 .middle-page {
@@ -502,24 +451,27 @@ li a {
 }
 /* middle page ended */
 
-
-
 /* curriculum vitae section */
 .Curriculum-vitae {
   /* background-color: rgb(225, 98, 98); */
   text-align: center;
   justify-content: center;
   width: 100%;
-  height: 53vh;
+  height: 50vh;
   display: grid;
-  gap: 5px;
-  margin: 10px 35px 20px 35px;
-  grid-template-columns: 33% 33% 33%;
+  gap: 0px;
+  grid-template-columns: 33.33% 33.33% 33.33%;
   grid-template-rows: 20% 80%;
   grid-template-areas:
     "header header header"
     "right middle left";
 }
+.vitaepic {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+}
+
 .items1 {
   grid-area: header;
   background-color: #19345d;
@@ -554,9 +506,6 @@ li a {
   grid-area: left;
   border: 2px solid black;
 }
-
-
-
 
 /* portfolio, iframe section and class container2 started */
 .container2 {
@@ -658,49 +607,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #65baef;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 /* footer section is ended */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
