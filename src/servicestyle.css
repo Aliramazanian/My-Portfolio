@@ -13,7 +13,8 @@ div {
   width: 400px;
   height: 400px;
   background-color: #262626;
-  animation: animate 10s infinite ease-in-out;
+  animation: animate 10s  ease-in-out;
+  animation-iteration-count: 1;
 }
 div:nth-child(1) {
   background: #00485f;
@@ -116,5 +117,5 @@ div:nth-child(4):hover {
   height: 15px;
   position: relative;
   left: 30px;
-  top: 130px;
+  top: 100px;
 }
