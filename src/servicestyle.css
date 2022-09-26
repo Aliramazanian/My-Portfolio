@@ -13,32 +13,32 @@ div {
   width: 400px;
   height: 400px;
   background-color: #262626;
-  animation: animate 4s infinite ease-in-out;
+  animation: animate 10s infinite ease-in-out;
 }
 div:nth-child(1) {
   background: #00485f;
-  
+
   left: 0;
   top: -400px;
-  transition-duration: 4s;
+  transition-duration: 8s;
 }
 div:nth-child(2) {
   background: #00deea;
   left: 0;
   top: 0;
-  transition-duration: 6s;
+  transition-duration: 10s;
 }
 div:nth-child(3) {
   background: #00deea;
   left: -400px;
   top: -400px;
-  transition-duration: 8s;
+  transition-duration: 12s;
 }
 div:nth-child(4) {
   background: #00485f;
   left: -400px;
   top: 0;
-  transition-duration: 10s;
+  transition-duration: 14s;
 }
 @keyframes animate {
   0% {
@@ -73,23 +73,21 @@ footer button {
 footer a {
   text-decoration: none;
   color: black;
-
 }
-div:nth-child(1):hover{
+div:nth-child(1):hover {
   animation-play-state: paused;
-  }
-  
+}
 
-div:nth-child(2):hover{
+div:nth-child(2):hover {
   animation-play-state: paused;
-  }
-  
-div:nth-child(3):hover{
+}
+
+div:nth-child(3):hover {
   animation-play-state: paused;
-  }
-  
+}
+
 div:nth-child(4):hover {
-animation-play-state: paused;
+  animation-play-state: paused;
 }
 .items3 h1 {
   font-size: 3rem;
@@ -105,11 +103,18 @@ animation-play-state: paused;
   left: 25px;
 }
 .items1 img {
-position: absolute;
-left: 15px;
+  position: absolute;
+  left: 15px;
 }
 
 .fa-brands {
   position: relative;
   left: 25px;
+}
+.botstrap-pic {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 30px;
+  top: 130px;
 }

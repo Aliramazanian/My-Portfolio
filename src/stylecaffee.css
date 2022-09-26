@@ -162,12 +162,12 @@ footer {
   
 }
 footer button {
-  background-color: #ae3580;
+  background-color: rgb(206, 194, 194);
   color: #dcdcdc;
   font-size: 1.5rem;
   border-radius: 15px;
   top: 80%;
-width: 100%;
+width: 280px;
 
 
 }
